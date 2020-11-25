@@ -58,9 +58,9 @@ def load_data(city, month, day):
     city_csv = CITY_DATA.get(city)
     df = pd.read_csv(city_csv)
     df['Start Time'] = pd.to_datetime(df['Start Time'])
-    df['Month']=df['Start Time'].dt.month
-    df['Weekday']=df['Start Time'].dt.dayofweek
-    df['Hour']=df['Start Time'].dt.hour
+    df['Month'] = df['Start Time'].dt.month
+    df['Weekday'] = df['Start Time'].dt.dayofweek
+    df['Hour'] = df['Start Time'].dt.hour
 
     if month != 'all':
         df = df[(df['Month'] == MONTH_DIC.get(month))]
@@ -110,12 +110,12 @@ def station_stats(df):
     start_time = time.time()
 
     # display most commonly used start station
-    popular_start_station=df['Start Station'].mode()[0]
+    popular_start_station = df['Start Station'].mode()[0]
     print('  The most common Start Station is: {}'.format(popular_start_station))
 
     # display most commonly used end station
-    popular_end_station=df['End Station'].mode()[0]
-    print('  The most common End Station is: {}'.format(popular_start_station))
+    popular_end_station = df['End Station'].mode()[0]
+    print('  The most common End Station is: {}'.format(popular_end_station))
 
     # display most frequent combination of start station and end station trip
     df['Start End Station Combi'] = df['Start Station'] + '  -  ' + df['End Station']
@@ -212,4 +212,4 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    main()
