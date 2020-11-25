@@ -1,15 +1,18 @@
 ### Date created
-Include the date you created this project and README file.
+2020-11-25
 
 ### Project Title
-Replace the Project Title
+bikeshare.py
 
 ### Description
-Describe what your project is about and what it does
+*Display of bikeshare data for the cities Washington, Chicago and New York City with possibility to filter for a specific month and weekday.
+*Display of various calculated data and display of raw data.
+*Interactive with user.
 
 ### Files used
-Include the files used
+*chicago.csv
+*washington.csv
+*new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Credits to UDACITY
