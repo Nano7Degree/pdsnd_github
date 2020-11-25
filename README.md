@@ -5,7 +5,9 @@
 bikeshare.py
 
 ### Description
-Display of (calculated) bikeshare data for the cities Washington, Chicago and New York City with possibility to filter for a specific city, month and weekday
+Display of bikeshare data for the cities Washington, Chicago and New York City with possibility to filter for a specific month and weekday.
+Display of various calculated data and display of raw data.
+Interactive with user.
 
 ### Files used
 chicago.csv
